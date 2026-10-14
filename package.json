@@ -1,0 +1,54 @@
+{
+  "name": "policy-drift-warden",
+  "version": "1.0.0",
+  "description": "Compare the trackers and third parties your built site actually loads with what its privacy policy declares: undisclosed vendors and categories, undisclosed sale/sharing for ads, stale vendors, missing or old update dates, pages not linking the policy. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "policy-drift-warden": "bin/policy-drift-warden.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "privacy-policy",
+    "privacy",
+    "gdpr",
+    "ccpa",
+    "trackers",
+    "compliance",
+    "disclosure",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/policy-drift-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/policy-drift-warden/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/policy-drift-warden#readme"
+}
