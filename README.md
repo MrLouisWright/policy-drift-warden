@@ -1,5 +1,7 @@
 # policy-drift-warden
 
+[![npm version](https://img.shields.io/npm/v/policy-drift-warden.svg)](https://www.npmjs.com/package/policy-drift-warden) [![CI](https://github.com/MrLouisWright/policy-drift-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/policy-drift-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/policy-drift-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Compare the trackers and third parties your built site actually loads with what its privacy policy says, and fail CI when they drift apart.
 
 Privacy policies are written once and sites keep changing. Marketing adds a Meta pixel, product adds Hotjar, and the policy still only mentions Google Analytics. Regulators and complainants check exactly this gap. `policy-drift-warden` builds the third-party inventory from your built HTML (the same detection as tracker-warden), reads your privacy policy page or file, and reports every vendor, category or sale/share practice that is not disclosed, with a **concrete fix**.
