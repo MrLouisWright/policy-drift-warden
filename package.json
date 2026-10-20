@@ -1,6 +1,6 @@
 {
   "name": "policy-drift-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compare the trackers and third parties your built site actually loads with what its privacy policy declares: undisclosed vendors and categories, undisclosed sale/sharing for ads, stale vendors, missing or old update dates, pages not linking the policy. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
