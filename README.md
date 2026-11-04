@@ -67,7 +67,7 @@ MEDIUM   index.html 2 page(s) do not link to the privacy policy, e.g. /, /shop.h
 ## Options
 
 ```text
-policy-drift-warden 1.0.0 — compare trackers on your site with what your privacy policy declares
+policy-drift-warden 1.0.1 — compare trackers on your site with what your privacy policy declares
 
 Usage: policy-drift-warden [site-dir] [options]
 
@@ -173,11 +173,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev policy-drift-warden
+```
+
 ```js
 import { check, policyDate } from "policy-drift-warden";
 const report = check("dist", { policyFile: "legal/privacy.md" });
 console.log(report.info.policy, report.findings);
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("policy-drift-warden")` from CommonJS.
 
 Types are included.
 
